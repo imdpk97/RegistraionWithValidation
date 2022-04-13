@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:cardElevation="1dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/cardview_bg_color"
+        app:cardMaxElevation="1dp"
+
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="1dp"
+
+        android:text="Registration Form"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_marginTop="30dp">
+
+
+        <TextView
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="UserId"
+            android:layout_marginTop="30dp"
+            android:textSize="22sp"
+
+            />
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/userId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="user1" />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FullName"
+
+            android:textSize="22sp" />
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="user 1" />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="22sp" />
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/userPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:text="123" />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact No"
+
+            android:textSize="22sp" />
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/userContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|phone"
+            android:text="1234567890" />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+
+            android:textSize="22sp" />
+
+        <RadioGroup
+            android:paddingLeft="10dp"
+
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15px"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:paddingLeft="10dp"
+                android:id="@+id/Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:gravity="center"
+                android:text="Male"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:paddingLeft="10dp"
+                android:id="@+id/Female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Female"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:paddingLeft="10dp"
+                android:id="@+id/others"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Others"
+                android:textSize="20dp" />
+
+
+        </RadioGroup>
+
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+
+            android:textSize="22sp" />
+
+
+        <Spinner
+            android:paddingLeft="10dp"
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="68dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="2"
+
+            android:textSize="30dp" />
+
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+
+            android:textSize="22sp" />
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/userAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:text="123,C21 Business park" />
+
+
+        <Button
+            android:paddingLeft="10dp"
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:background="#1CB71F"
+            android:layout_marginTop="30dp"
+            android:text="Click To Submit"
+            android:textColor="#FBF6F5"
+            android:textSize="16sp" />
+
+
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+

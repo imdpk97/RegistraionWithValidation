@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RegistraionWithValidation</string>
+    <string name="userid">userId</string>
+    <string name="fullname">FullName:</string>
+</resources>
